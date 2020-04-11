@@ -42,6 +42,7 @@ section: 495px
 body{
     display: block;
     margin: auto;
+    margin-top: 10px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777;
     background: #777;
@@ -55,11 +56,13 @@ header, nav, section, aside, footer{
     background: #ebebeb;
 }
 nav{
-   margin-top: -10px;
+   margin-top: -10px; /*is this weird to do?, adjusts gap between header and nav to more like the picture*/
 }
 
 article{
+    margin-top: 20px;
     padding-top: 20px;
+    padding-bottom: 1px; /*exhibits strange behavior with changing, ask TA*/
     color: #ebebeb;
     background: #777;
 }
@@ -80,7 +83,8 @@ aside{
     float: left;
     padding: 20px;
     width: 445px;
-    height: 285px;
+    height: 308px; /*manually set, should be automatically sized...?*/
+    /*position: relative;*/
     margin-left: 20px;
     overflow: auto;
 }
