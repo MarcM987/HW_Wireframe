@@ -34,7 +34,14 @@ background: '#ebebeb'
 section: 495px
 */
 
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
 body{
+    display: block;
+    margin: auto;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777;
     background: #777;
@@ -43,19 +50,41 @@ body{
 }
 
 header, nav, section, aside, footer{
+    padding: 20px;
+    margin-bottom: 20px;
     background: #ebebeb;
+}
+nav{
+   margin-top: -10px;
 }
 
 article{
+    padding-top: 20px;
     color: #ebebeb;
     background: #777;
 }
 
 h1, p{
+    margin: 20px;
+    padding: 20px;
     color: #777;
     background: #ebebeb;
 }
 
 section{
     width: 495px;
+    float: left; 
+}
+
+aside{
+    float: left;
+    padding: 20px;
+    width: 445px;
+    height: 285px;
+    margin-left: 20px;
+    overflow: auto;
+}
+
+footer{
+    clear: both;
 }
